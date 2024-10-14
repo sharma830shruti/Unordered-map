@@ -1,0 +1,34 @@
+/*
+Syntax:
+unordered_map<string,string>New_map = {{key1, value1}, {key2, value2}, {key3, value3}};
+*/
+
+// C++ program to implement
+// the above approach
+#include <iostream>
+#include <unordered_map>
+using namespace std;
+
+// Driver code
+int main() 
+{
+    // Initialize unordered_map using 
+    // default constructor
+    unordered_map<string, string>New_map;
+  
+    // Adding key-value pairs using 
+    // Initializer list
+    New_map = {{"Ground", "Grass"}, 
+               {"Floor", "Cement"}, 
+               {"Table", "Wood"}};
+    
+    // Traverse through the unordered_map
+    for(auto x: New_map)
+    {
+       cout << x.first << "->" <<
+               x.second <<endl;
+    }    
+    return 0;
+}
+
+
